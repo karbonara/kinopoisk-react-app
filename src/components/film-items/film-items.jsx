@@ -25,9 +25,11 @@ function FilmItems() {
         <FilmsWrapper>
             {dataFilm.map((item) => (
                 <FilmItem key={item.filmId}>
-                    <FilmImg src={item.posterUrl} alt={item.nameRu}></FilmImg>
-                    <Link style={{ textDecoration: 'none' }} to={`/film/${item.filmId}`}><Title>{item.nameRu}</Title></Link>
-                    <FilmRating rating={item.rating} />
+                    <Link style={{ textDecoration: 'none' }} to={`/film/${item.filmId}`}>
+                        <FilmImg src={item.posterUrl} alt={item.nameRu}></FilmImg>
+                        <Title>{item.nameRu}</Title>
+                        <FilmRating rating={item.rating} />
+                    </Link>
                 </FilmItem>
             ))}
         </FilmsWrapper>

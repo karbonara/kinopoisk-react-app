@@ -5,13 +5,14 @@ export const Title = styled.div`
     margin: 6px 0;
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
+    font-weight: 500;
 `;
 export const FilmsWrapper = styled.div`
     width: 80vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
 `;
 export const FilmImg = styled.img`
@@ -21,7 +22,7 @@ export const FilmImg = styled.img`
 `;
 export const FilmItem = styled.div`
     width: 220px;
-    margin: 14px 0;
+    margin: 14px 38px;
     position: relative;
     transition: 0.2s;
     &:hover {

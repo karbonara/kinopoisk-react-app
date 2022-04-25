@@ -1,1 +1,1 @@
-//
+Стек: React / React Router Dom ( useParams ) / Styled-components / axios
