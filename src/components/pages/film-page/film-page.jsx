@@ -21,6 +21,9 @@ function FilmPage() {
             },
         })
             .then(({ data }) => setFilm(data))
+            .catch((error) => {
+                <h1>Загрузка данных...</h1>
+            })
     }, [])
 
     useEffect(() => {
